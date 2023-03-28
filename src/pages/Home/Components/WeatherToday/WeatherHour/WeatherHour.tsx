@@ -1,9 +1,5 @@
 import React from 'react';
 import './weatherHour.scss';
-import clouds from '../../../../../images/cloud.svg';
-import cloudSun from '../../../../../images/cloud with sun.svg';
-import storm from '../../../../../images/storm.svg';
-import sun from '../../../../../images/sun.svg';
 
 interface WeatherHourProps {
   time: number;
@@ -13,18 +9,17 @@ interface WeatherHourProps {
 function setWeatherIcon(weather: string): string {
   switch (weather) {
     case 'cloudy':
-      return clouds;
+      return 'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/cloud%20with%20sun.svg';
     case 'sun':
-      return sun;
+      return 'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/sun.svg';
     case 'cloudSun':
-      return cloudSun;
+      return 'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/cloud.svg';
     case 'storm':
-      return storm;
+      return 'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/storm.svg';
     default:
-      return sun;
+      return 'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/sun.svg';
   }
 }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function WeatherHour({ time, temp, weather }: WeatherHourProps): React.ReactElement {
   return (
     <div className="weather_hour">

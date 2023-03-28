@@ -1,10 +1,12 @@
 import React from 'react';
 import './weatherToday.scss';
-import polygon from '../../../../images/Component 1.svg';
-import swipe from '../../../../images/swipe_icon.svg';
 import WeatherHour from './WeatherHour/WeatherHour';
 
 export default function WeatherToday(): React.ReactElement {
+  const polygon =
+    'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/Component%201.svg';
+  const swipe =
+    'https://raw.githubusercontent.com/KNIDZE/Sunny/f6c249cc4381b1441e9cd545cc5ab7125bc2d570/src/images/swipe_icon.svg';
   const hourlyWeather = [
     { hour: 9, weather: 'cloudy', temp: 16 },
     { hour: 12, weather: 'sunny', temp: 19 },
