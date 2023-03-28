@@ -1,0 +1,46 @@
+@import "../../../Home/home.scss";
+.weather_today{
+  width: calc(100% - 20px);
+  //background-color: white;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+  .polygon{
+    z-index: 0;
+    left:0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: -55px;
+  }
+  h1{
+    color: #282c34;
+    z-index: 1;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transform: translate(0, -20px);
+    font-family: $mainFont;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  .swipe_line{
+    z-index: 1;
+    width: 40px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%, -25px);
+  }
+  .hourly_weather{
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
